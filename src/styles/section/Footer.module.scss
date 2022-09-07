@@ -1,0 +1,75 @@
+@import "../config.scss";
+
+.footer {
+  background: rgba(11, 10, 12, 0.6);
+  padding: 72px 135px 30px 135px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.menu {
+  display: flex;  
+}
+
+.list {
+  margin-left: 25px;
+  h6 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  ul li {
+    color: darken($textcolor, 30)
+  }
+}
+
+.copyright {
+  border-top: 1px solid #3F3E45;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.paragraph {
+  p {
+    margin: 0;
+  }
+}
+
+.networks {
+  a {
+    margin-right: 36px;
+  }
+}
+
+
+
+@media screen and (max-width: 1170px) {
+  .container {
+    flex-direction: column;
+  }
+  .logo_wrap {
+    margin-bottom: 40px;
+  }
+  .list {
+    margin: 0;
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .footer {
+    padding: 10px 10px 30px 10px;
+  }
+  .networks {
+    a {
+      margin-right: 8px;
+    }
+  }
+}

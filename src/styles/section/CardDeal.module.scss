@@ -1,0 +1,47 @@
+@import "../config.scss";
+
+.card_deal {
+  display: flex;
+  margin-top: 40px;
+}
+
+.content_left, .content_right {
+  width: 50%;
+}
+
+.bg_wrap {
+  padding-right: 20px;
+  img {
+    width: 100%;
+  }
+}
+
+.content_left {
+  margin-right: 40px;
+  h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.5;
+    
+  }
+  p {
+    color: darken($textcolor, 30);
+    padding-bottom: 20px;
+  }
+}
+
+.content_right {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 930px) {
+  .card_deal {
+    flex-direction: column;
+  }
+  .content_left, .content_right {
+    width: 100%;
+  }
+  .bg_wrap {
+    padding-top: 20px;
+  }
+}

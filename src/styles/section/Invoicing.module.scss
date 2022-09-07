@@ -1,0 +1,48 @@
+@import "../config.scss";
+
+.invoicing {
+  margin-top: 40px;
+  display: flex;
+}
+
+.content_left {
+  width: 50%;
+}
+
+.content_right {
+  width: 50%;
+  // margin-left: 30px;
+  max-width: 470px;
+  h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  p {
+    color: darken($textcolor, 30)
+  }
+}
+
+.img_wrap {
+  img {
+    width: 100%;
+  }
+}
+
+.store_wrap {
+  img {
+    margin-right: 40px;
+  }
+}
+
+
+// media // 
+
+@media screen and (max-width: 930px) {
+  .invoicing {
+    flex-direction: column;
+  }
+  .content_left, .content_right {
+    width: 100%;
+  }
+}

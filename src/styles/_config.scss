@@ -1,0 +1,31 @@
+$accent: orange; // Accent Color
+$fontsize: 16px; // Body Font Size
+$textcolor: #fff; // Text Color
+$bgc: #00040F;
+$lineheight: 1.65; // Document Line Height
+$userfont: 'Segoe UI', sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;; // System Font Family
+
+::placeholder {
+  color: #666
+}
+
+::selection {
+  background-color: $accent;
+	color: #fff;
+}
+
+body {
+  font-family: $userfont;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	color: $textcolor;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	background-color: $bgc;
+	margin: 0;
+	padding: 0;
+}

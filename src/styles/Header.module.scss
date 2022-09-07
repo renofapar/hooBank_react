@@ -1,0 +1,49 @@
+@import 'config.scss';
+
+.navbar {
+  display: flex;
+  padding: 40px 40px 40px 0px;
+  position: relative;
+}
+
+.logo {
+  flex-grow: 1;
+  height: 32px;
+  img {
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .logo {
+    height: 24px;
+  }
+}
+
+.menuNav {
+  display: flex;
+  a {
+    padding-left: 34px;
+    color: darken($textcolor, 30)
+  }
+  a.active {
+    color: $textcolor;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menuNav {
+    flex-direction: column;
+  }
+}
+
+.menuDrawer {
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .menuDrawer {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+@import 'config.scss';
+
+a, a:hover {
+  text-decoration: none;
+  color: $textcolor;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}

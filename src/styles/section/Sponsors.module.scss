@@ -1,0 +1,73 @@
+@import "../config.scss";
+
+.sponsors {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  li {
+    width: 192px;
+    margin-right: 100px;
+    padding: 20px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.service {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 72px 100px;
+  margin-top: 40px;
+}
+
+.content {
+  padding-right: 20px;
+  h3 {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+  }
+  p {
+    font-size: 18px;
+    color: darken($textcolor, 30)
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .service {
+    flex-direction: column;
+
+  }
+  .btn_wrap {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .service {
+    padding: 30px 50px;
+  }
+  .content {
+    h3 {
+      font-size: 32px;
+    }
+  }
+}

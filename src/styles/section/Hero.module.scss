@@ -1,0 +1,111 @@
+@import "../config.scss";
+
+.row {
+  display: flex;
+}
+
+.left_content {
+  width: 50%;
+  position: relative;
+  padding-top: 100px;
+}
+
+.right_content {
+  width: 50%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+.discount_block {
+  position: relative;
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  border-radius: 10px;
+  display: inline-flex;
+  padding: 6px 20px 6px 20px;
+  p {
+    color: darken($textcolor, 30);
+    margin: 0;
+    text-transform: uppercase;
+    
+    font-size: 18px;
+    span {
+      color: $textcolor;
+    }
+  }
+  img {
+    margin-right: 15px;
+  }
+}
+
+.header_text {
+  h1 {
+    font-size: 72px;
+    line-height: 1.5;
+    span {
+      background: radial-gradient(
+          64.18% 64.18% at 71.16% 35.69%,
+          #def9fa 0.89%,
+          #bef3f5 17.23%,
+          #9dedf0 42.04%,
+          #7de7eb 55.12%,
+          #5ce1e6 71.54%,
+          #33bbcf 100%
+        );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+}
+
+.span_gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .header_text {
+    h1 {
+      font-size: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .row {
+    flex-direction: column;
+  }
+  .right_content {
+    width: 100%;
+  }
+  .left_content {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .row {
+    flex-direction: column;
+  }
+  .right_content, .left_content {
+    width: 100%;
+  }
+}
